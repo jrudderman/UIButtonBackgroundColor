@@ -4,27 +4,14 @@ Set the background color of any `UIButton`.
 
 ## Instructions
 
-1. Download
+1. Follow these [instructions on how to add a Git repository to your Xcode project][1].
 
-    From the root directory of your project's Git repository, run:
-
-        git submodule add git@github.com:acani/UIButtonBackgroundColor.git Libraries/UIButtonBackgroundColor
-
-2. Install
-
-    From Finder, drag the newly created directory to your project's project navigator in Xcode.
-
-    Uncheck "Copy items if needed," select "Create groups," and uncheck all targets.
-
-    In Xcode, remove the reference to `UIButtonBackgroundColor/.gitignore`.
-
-    Add `UIButtonBackgroundColor.swift` to your target.
-
-3. Use
+2. Usage
 
         myButton.setBackgroundColor(UIColor.blueColor(), forState: .Normal)
 
-Released under the [Unlicense][3].
+Released under the [Unlicense][2].
 
 
-[3]: http://unlicense.org
+[1]: https://github.com/acani/Libraries
+[2]: http://unlicense.org
