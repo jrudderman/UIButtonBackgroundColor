@@ -2,8 +2,10 @@ import UIKit
 
 extension UIButton {
     func setBackgroundColor(color: UIColor?, forState state: UIControlState) {
-        let image = color != nil ? UIImage.imageColored(color!) : nil
-        setBackgroundImage(image, forState: state)
+        guard let color = color else {
+            return setBackgroundImage(nil, forState: state)
+        }
+        setBackgroundImage(UIImage.imageColored(color), forState: state)
     }
 }
 
